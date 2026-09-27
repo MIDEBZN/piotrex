@@ -1,0 +1,339 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Plombier à Woluwe-Saint-Lambert & Bruxelles | Dépannage 24/7" 
+  description="Piotrex est votre plombier chauffagiste de référence à Woluwe-Saint-Lambert et Bruxelles. Débouchage express, fuite d'eau, chaudière, intervention rapide 24h/7j. Devis gratuit !"
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div>
+          <span class="badge-tag">Plombier Chauffagiste Certifié à Woluwe-Saint-Lambert</span>
+          <h1 class="hero-title">
+            Votre Plombier Dépanneur à <span class="highlight">Woluwe-Saint-Lambert</span> & Région de Bruxelles
+          </h1>
+          <p class="hero-desc">
+            Urgence plomberie ou projet de rénovation ? <strong>Piotrex</strong> intervient chez vous en moins de 30 minutes 24h/24 et 7j/7 pour tous travaux de dépannage, débouchage canalisation, réparation de fuites d'eau et installation de chaudière.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:+32470123456" class="btn btn-emergency" id="hero-btn-call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Dépannage d'urgence : 0470 12 34 56
+            </a>
+            <a href="/contact" class="btn btn-secondary" id="hero-btn-quote">
+              Demander un devis gratuit
+            </a>
+          </div>
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <span class="hero-feature-num">30 min</span>
+              <span class="hero-feature-text">Délai d'intervention express sur Woluwe et Bruxelles</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="hero-feature-num">24h/7j</span>
+              <span class="hero-feature-text">Disponibilité totale pour toutes vos urgences</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="hero-feature-num">100%</span>
+              <span class="hero-feature-text">Tarifs transparents annoncés avant intervention</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Service Express</span>
+                <span style="background: rgba(34, 197, 94, 0.2); color: #4ade80; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: 600;">En service maintenant</span>
+              </div>
+              <h2 class="hero-card-title">Besoin d'un dépannage immédiat ?</h2>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Remplissez vos coordonnées pour être rappelé instantanément par notre technicien de garde.
+              </p>
+            </div>
+
+            <form action="/contact" method="GET" id="quick-contact-form">
+              <div class="form-group">
+                <label for="quick-name" class="form-label">Votre Nom</label>
+                <input type="text" id="quick-name" name="name" class="form-control" placeholder="ex. Jean Dupont" required />
+              </div>
+              <div class="form-group">
+                <label for="quick-phone" class="form-label">Numéro de téléphone</label>
+                <input type="tel" id="quick-phone" name="phone" class="form-control" placeholder="ex. 0470 12 34 56" required />
+              </div>
+              <div class="form-group">
+                <label for="quick-service" class="form-label">Type d'intervention</label>
+                <select id="quick-service" name="service" class="form-control">
+                  <option value="debouchage">Débouchage urgent (WC / Évier / Égout)</option>
+                  <option value="fuite">Fuite d'eau ou rupture de tuyauterie</option>
+                  <option value="chauffe-eau">Chauffe-eau ou chaudière en panne</option>
+                  <option value="autre">Autre problème de plomberie</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Être rappelé dans les 5 minutes
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Highlight Banner -->
+  <section class="container" style="margin-top: 1rem; margin-bottom: 2rem;">
+    <div class="emergency-banner">
+      <div class="container">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="font-size: 2rem;">🚨</span>
+          <div>
+            <div style="font-weight: 800; font-size: 1.15rem; color: #fff;">Inondation ou canalisation complètement bouchée ?</div>
+            <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem;">Notre équipe d'astreinte est disponible à tout moment, de jour comme de nuit.</div>
+          </div>
+        </div>
+        <a href="tel:+32470123456" class="btn" style="background: #ffffff; color: #991b1b; font-weight: 800;">
+          Appeler le 0470 12 34 56
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section" style="background: rgba(17, 28, 52, 0.35);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="badge-tag">Nos Prestations</span>
+        <h2 class="section-title">Services Complets de Plomberie à Bruxelles</h2>
+        <p class="section-subtitle">
+          De l'intervention urgente de débouchage jusqu'à l'installation complète de sanitaires et de chauffage central, découvrez l'expertise de <strong>Piotrex</strong>.
+        </p>
+      </div>
+
+      <div class="cards-grid-3">
+        <!-- Service 1 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Débouchage Canalisations</h3>
+          <p class="card-desc">
+            Débouchage haute pression pour WC bouchés, éviers, douches, baignoires et colonnes générales d'immeubles. Inspection caméra pour localisation précise du bouchon.
+          </p>
+          <a href="/services#debouchage" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="m4.93 4.93 4.24 4.24"></path>
+              <path d="m14.83 9.17 4.24-4.24"></path>
+              <path d="m14.83 14.83 4.24 4.24"></path>
+              <path d="m9.17 14.83-4.24 4.24"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Recherche & Réparation de Fuites</h3>
+          <p class="card-desc">
+            Détection de fuites invisibles ou encastrées par technologie acoustique et caméra thermique sans destruction inutile des murs ou des sols.
+          </p>
+          <a href="/services#fuites" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="card-title">Chauffage & Chaudières</h3>
+          <p class="card-desc">
+            Entretien annuel agréé, dépannage en urgence de chaudière au gaz ou mazout, remplacement de circulateur, purge et désembouage de vos radiateurs.
+          </p>
+          <a href="/services#chauffage" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Installation Sanitaire</h3>
+          <p class="card-desc">
+            Remplacement de mitigeurs, robinetterie, mécanisme de chasse d'eau WC suspendu (Geberit), pose de chauffe-eau électrique et boiler thermodynamique.
+          </p>
+          <a href="/services#sanitaire" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="card-title">Rénovation de Salle de Bain</h3>
+          <p class="card-desc">
+            Transformation clé en main de votre salle de bain : douche à l'italienne, carrelage étanche, meuble vasque sur mesure et raccordements complets.
+          </p>
+          <a href="/services#renovation" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Dépannage d'Urgence 24h/24</h3>
+          <p class="card-desc">
+            Intervention en 30 minutes 7 jours sur 7 même les jours fériés. Nos techniciens qualifiés disposent de tout le matériel dans leur véhicule d'intervention.
+          </p>
+          <a href="/services#depannage" class="btn btn-secondary" style="margin-top: auto; font-size: 0.85rem;">En savoir plus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Focus: Woluwe-Saint-Lambert & Brussels -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <span class="badge-tag">Proximité Locale</span>
+          <h2 class="section-title">Pourquoi Choisir Piotrex à Woluwe-Saint-Lambert ?</h2>
+          <p class="section-subtitle" style="margin-bottom: 1.5rem;">
+            Implantés au cœur de Woluwe-Saint-Lambert (Avenue Georges Henri, Roodebeek, Tomberg, Marcel Thiry), nous connaissons parfaitement le parc immobilier bruxellois, ses spécificités techniques et ses canalisations anciennes.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: #38bdf8; font-weight: 800; font-size: 1.2rem;">✓</span>
+              <div>
+                <strong>Arrivée en 30 minutes chrono :</strong> Étant basés à Woluwe-Saint-Lambert, notre équipe est chez vous rapidement sans retard de circulation.
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: #38bdf8; font-weight: 800; font-size: 1.2rem;">✓</span>
+              <div>
+                <strong>Artisans Qualifiés & Agréés :</strong> Travaux réalisés selon les normes belges strictes (attestation pour assurances et déduction fiscale).
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: #38bdf8; font-weight: 800; font-size: 1.2rem;">✓</span>
+              <div>
+                <strong>Clarté tarifaire :</strong> Devis clair et détaillé avant chaque intervention, aucun coût caché ou mauvaise surprise.
+              </div>
+            </div>
+          </div>
+          <a href="/locations" class="btn btn-primary">Voir toutes nos zones d'intervention →</a>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; position: relative;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">Communes proches couvertes en 30 minutes :</h3>
+          <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem; color: var(--text-secondary); font-size: 0.95rem;">
+            <li>🔹 Woluwe-Saint-Lambert (1200)</li>
+            <li>🔹 Woluwe-Saint-Pierre (1150)</li>
+            <li>🔹 Etterbeek (1040)</li>
+            <li>🔹 Schaerbeek (1030)</li>
+            <li>🔹 Ixelles (1050)</li>
+            <li>🔹 Auderghem (1160)</li>
+            <li>🔹 Evere (1140)</li>
+            <li>🔹 Kraainem & Wezembeek</li>
+          </ul>
+          <div style="padding: 1rem; background: rgba(2, 132, 199, 0.1); border-radius: var(--radius-md); border: 1px solid var(--border-accent);">
+            <div style="font-weight: 700; color: #38bdf8; margin-bottom: 0.25rem;">Garantie satisfaction Piotrex</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+              Toutes nos réparations et installations neuves bénéficient d'une garantie pièces et main d'œuvre de 2 ans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="section" style="background: rgba(17, 28, 52, 0.5);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="badge-tag">Témoignages Clients</span>
+        <h2 class="section-title">Ce que nos clients disent de nous</h2>
+        <p class="section-subtitle">Avis vérifiés de particuliers et syndics de copropriété à Woluwe-Saint-Lambert et Bruxelles.</p>
+      </div>
+
+      <div class="cards-grid-3">
+        <div class="card">
+          <div style="color: #f59e0b; margin-bottom: 0.75rem; font-size: 1.1rem;">★★★★★</div>
+          <p class="card-desc">
+            "Une fuite importante sous mon évier un dimanche soir. Piotrex est arrivé en 25 minutes à Woluwe. Travail soigné, prix honnête et technicien très courtois. Je recommande vivement !"
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: 1rem;">
+            <strong>Marc V.</strong>
+            <span style="display: block; font-size: 0.8rem; color: var(--text-muted);">Avenue de Broqueville, Woluwe-Saint-Lambert</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="color: #f59e0b; margin-bottom: 0.75rem; font-size: 1.1rem;">★★★★★</div>
+          <p class="card-desc">
+            "Débouchage d'urgence de la canalisation principale de notre maison de maître. Le plombier disposait d'une caméra d'inspection et d'un hydrocureur professionnel. Problème résolu rapidement."
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: 1rem;">
+            <strong>Sophie D.</strong>
+            <span style="display: block; font-size: 0.8rem; color: var(--text-muted);">Quartier Georges Henri, 1200 Bruxelles</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="color: #f59e0b; margin-bottom: 0.75rem; font-size: 1.1rem;">★★★★★</div>
+          <p class="card-desc">
+            "Remplacement complet de notre chaudière au gaz et pose de nouveaux radiateurs. Devis précis, délais respectés et attestation de conformité délivrée dès la fin du chantier."
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: 1rem;">
+            <strong>Laurent B.</strong>
+            <span style="display: block; font-size: 0.8rem; color: var(--text-muted);">Boulevard Brand Whitlock</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, #075985, #0369a1); border-radius: var(--radius-lg); padding: 3.5rem 2.5rem; text-align: center; box-shadow: var(--shadow-lg);">
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: #ffffff; margin-bottom: 1rem;">
+          Une urgence plomberie à Bruxelles ou Woluwe ?
+        </h2>
+        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; max-width: 650px; margin: 0 auto 2rem auto;">
+          Contactez immédiatement Piotrex. Notre équipe est prête à intervenir sans délai pour résoudre tout problème de fuite, canalisation bouchée ou panne de chauffage.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="tel:+32470123456" class="btn btn-emergency" style="font-size: 1.05rem; padding: 0.9rem 2rem;">
+            📞 0470 12 34 56 (Intervention 24h/7j)
+          </a>
+          <a href="/contact" class="btn btn-secondary" style="background: rgba(0,0,0,0.3); font-size: 1.05rem; padding: 0.9rem 2rem;">
+            Demander un devis en ligne
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

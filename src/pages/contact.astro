@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Contactez Piotrex Plomberie | Devis Gratuit & Urgence 24/7" 
+  description="Contactez Piotrex Plomberie à Woluwe-Saint-Lambert. Dépannage urgent 24h/7j au 0470 12 34 56 ou demande de devis gratuit pour travaux de plomberie et chauffage."
+>
+  <!-- Header -->
+  <section class="section" style="padding-top: 4rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container text-center">
+      <span class="badge-tag">Service Client & Dépannage</span>
+      <h1 class="section-title">Contactez Piotrex Plomberie</h1>
+      <p class="section-subtitle" style="max-width: 680px; margin: 0 auto;">
+        Une question, une demande de prix pour vos sanitaires ou une urgence immédiate ? Nous sommes à votre écoute 24h/24 et 7j/7.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3.5rem;">
+        
+        <!-- Coordinates -->
+        <div>
+          <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1.5rem; color: #ffffff;">Nos Coordonnées Directes</h2>
+          
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); padding: 2rem; margin-bottom: 2rem;">
+            <div style="margin-bottom: 1.5rem;">
+              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 0.35rem;">
+                🚨 Urgences 24h/24 & 7j/7 (Dépannage express)
+              </span>
+              <a href="tel:+32470123456" style="font-size: 1.5rem; font-weight: 800; color: #ef4444; display: block; text-decoration: none;">
+                +32 470 12 34 56
+              </a>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 0.35rem;">
+                📞 Bureau fixe & Devis
+              </span>
+              <a href="tel:+3225884420" style="font-size: 1.25rem; font-weight: 700; color: #38bdf8; display: block; text-decoration: none;">
+                +32 2 588 44 20
+              </a>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 0.35rem;">
+                ✉️ Adresse e-mail
+              </span>
+              <a href="mailto:contact@piotrex.be" style="font-size: 1.1rem; color: var(--text-primary); text-decoration: none;">
+                contact@piotrex.be
+              </a>
+            </div>
+
+            <div>
+              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 0.35rem;">
+                📍 Adresse de l'atelier
+              </span>
+              <p style="color: var(--text-primary); margin: 0; font-size: 1rem; line-height: 1.5;">
+                Avenue Georges Henri 250<br />
+                1200 Woluwe-Saint-Lambert, Bruxelles
+              </p>
+            </div>
+          </div>
+
+          <div style="background: rgba(2, 132, 199, 0.1); border: 1px solid var(--border-accent); border-radius: var(--radius-md); padding: 1.5rem;">
+            <strong style="color: #38bdf8; display: block; margin-bottom: 0.5rem; font-size: 1.05rem;">
+              Conseil pour les urgences fuite d'eau :
+            </strong>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.6;">
+              En attendant l'arrivée de notre technicien, localisez et fermez le robinet d'arrêt général d'eau situé à côté de votre compteur d'eau pour limiter les dégâts d'inondation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-accent); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-lg);">
+          <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; color: #ffffff;">Envoyez-nous un message</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 2rem;">
+            Devis gratuit et sans engagement. Réponse sous 2 heures pendant les heures ouvrables.
+          </p>
+
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Merci pour votre message ! Un technicien Piotrex va vous recontacter dans les plus brefs délais.');">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nom et Prénom *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Jean Dupont" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Numéro de Téléphone *</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="0470 12 34 56" required />
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Adresse E-mail *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="jean.dupont@gmail.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-commune" class="form-label">Commune (Bruxelles) *</label>
+                <input type="text" id="contact-commune" class="form-control" placeholder="ex. Woluwe-Saint-Lambert" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Nature de votre demande *</label>
+              <select id="contact-subject" class="form-control" required>
+                <option value="">Sélectionnez une option</option>
+                <option value="urgence">🚨 Urgence (intervention immédiate)</option>
+                <option value="debouchage">Débouchage WC / Évier / Égout</option>
+                <option value="fuite">Recherche ou réparation de fuite</option>
+                <option value="chaudiere">Entretien ou dépannage chaudière</option>
+                <option value="renovation">Devis rénovation salle de bain</option>
+                <option value="autre">Autre renseignement</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Description détaillée de votre besoin *</label>
+              <textarea id="contact-message" rows="5" class="form-control" placeholder="Décrivez le problème rencontré, l'étage, l'urgence ou les travaux envisagés..." required></textarea>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <input type="checkbox" id="consent" required style="accent-color: var(--primary);" />
+              <label for="consent" style="font-size: 0.85rem; color: var(--text-secondary);">
+                J'accepte que Piotrex me recontacte au sujet de cette demande.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 0.9rem;">
+              Envoyer ma demande de devis gratuit
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
